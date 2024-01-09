@@ -1,2 +1,2 @@
 # operationmarmot
-A tamper detection script.
+A tamper detection script with additional features.
