@@ -41,6 +41,6 @@ do
 
     # Log the change.
     timestamp=$(date "+%Y-%m-%d %H:%M:%S")
-    echo "File changed: $file_changed by $ip_address $USER at $timestamp" >> "$log_file"
+    echo "FILE TAMPERED: $file_changed by $ip_address $USER at $timestamp" >> "$log_file"
 
 done
