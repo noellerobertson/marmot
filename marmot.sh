@@ -20,7 +20,6 @@ if ! command -v inotify >/dev/null 2>&1; then
   # Check to see if inotify successfully installed.
   if [ $? -eq 0 ]; then
     echo "inotify was installed successfully."
-    exit 1
   fi
 fi
 
