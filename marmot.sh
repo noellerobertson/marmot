@@ -39,6 +39,6 @@ do
     timestamp=$(date "+%Y-%m-%d %H:%M:%S")
     echo "File changed: $file_changed by $ip_address at $timestamp" >> "$log_file"
 
-		# Display the recent findings in the terminal.
-		tail -f file_change_log.txt | tail -n 10
+# Display the recent findings in the terminal.
+tail -f marmotscream.txt | tail -n 10
 done
