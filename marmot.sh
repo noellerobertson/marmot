@@ -6,12 +6,12 @@
 # In another window, run: tail -f marmotscream.txt to view changes in real time.
 
 # Check to see if inotify is installed.
-if ! command -v inotify >/dev/null 2>&1; then
+if ! command -v inotify-tools >/dev/null 2>&1; then
   echo "Configuring inotify..."
 
   # Install inotify (ensure the package manager is correct for your distribution).
   if command -v apt-get >/dev/null 2>&1; then
-    sudo apt-get install -y inotify
+    sudo apt-get install -y inotify-tools
   else
     echo "There was an error installing inotify. Please attempt to install manually by running: sudo [package manager] install inotify-tools."
     exit 1
