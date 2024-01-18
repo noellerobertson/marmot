@@ -35,11 +35,9 @@ log_file="marmotscream.txt"
 inotifywait -m -e modify,attrib,close_write,move,delete --format "%w%f" "$file_to_monitor" |
 while read -r file_changed
 do
-    # Get the IP address of the user who changed the file.
-    ip_address=$(who | awk '{print $5}' | sort -u | head -n 1)
 
     # Log the change.
     timestamp=$(date "+%Y-%m-%d %H:%M:%S")
-    echo "FILE TAMPERED: $file_changed by $ip_address $USER at $timestamp" >> "$log_file"
+    echo "FILE TAMPERED: $file_changed by $USER at $timestamp" >> "$log_file"
 
 done
