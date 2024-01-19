@@ -9,7 +9,7 @@ A tamper detection script that monitors target files for changes or access.
 3. If installed, proceeds with script and starts "watching" for changes to target files.
 4. In another window, run tail -r marmotscream.txt to view changes in real time.
 
-Changes will be shown in marmotscream.txt as "File Name", "IP Address", "User" and date/time.
+Changes will be shown in marmotscream.txt as "File Name", "User" and date/time.
 
 <h1>Information About inotify</h1>
 
